@@ -1,10 +1,6 @@
-using System;
-using System.Reflection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using GCMIoCExtension;
 using Microsoft.Extensions.DependencyInjection;
-using System.Collections.Generic;
-using System.Linq;
 using Shouldly;
 
 namespace GCMIoCExtensionTests
@@ -28,7 +24,7 @@ namespace GCMIoCExtensionTests
             a.ShouldNotBeNull();
             var b = provider.GetService<ISingletonAutoRegisterTest>();
             a.ShouldBeSameAs(b);
-            
+
             // Transient Check
             var x = provider.GetService<ITransientAutoRegisterTest>();
             x.ShouldNotBeNull();
