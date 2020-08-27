@@ -11,6 +11,7 @@ namespace GCMIoCExtension
         public static IServiceCollection AddAutoRegister(this IServiceCollection serviceCollection)
         {
             IDictionary<Type, IoCScope> dict = GetInterfacesThatImplementAutoRegister();
+            CheckForClashesInInheiranceTree(dict);
             RegisterTypes(serviceCollection, dict);
             return serviceCollection;
         }
@@ -55,8 +56,24 @@ namespace GCMIoCExtension
             {
                 RecordType(dict, t);
             }
-
             return dict;
+        }
+
+        private static void CheckForClashesInInheiranceTree(IDictionary<Type, IoCScope> dict)
+        {
+            foreach (var type in dict.Keys)
+            {
+                foreach (var type2 in dict.Keys)
+                {
+                    if (type != type2)
+                    {
+                        if (type.IsAssignableFrom(type2))
+                        {
+                            throw new ArgumentException($"{type.FullName} is assignable from {type2.FullName}");
+                        }
+                    }
+                }
+            }
         }
 
         private static IEnumerable<Type> GetAutoRegisterInterfaces()

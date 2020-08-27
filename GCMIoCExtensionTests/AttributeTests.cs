@@ -31,15 +31,5 @@ namespace GCMIoCExtensionTests
             var y = provider.GetService<ITransientAutoRegisterTest>();
             x.ShouldNotBeSameAs(y);
         }
-
-
-    }
-    public class SingletonAutoRegisterTest : ISingletonAutoRegisterTest
-    {
-
-    }
-    public class TransientAutoRegisterTest : ITransientAutoRegisterTest
-    {
-
     }
 }
