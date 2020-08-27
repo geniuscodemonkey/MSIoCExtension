@@ -1,0 +1,8 @@
+C:\Working\MSIoCExtension\GCMIoCExtension\bin\Debug\netstandard2.0\GCMIoCExtension.deps.json
+C:\Working\MSIoCExtension\GCMIoCExtension\bin\Debug\netstandard2.0\GCMIoCExtension.dll
+C:\Working\MSIoCExtension\GCMIoCExtension\bin\Debug\netstandard2.0\GCMIoCExtension.pdb
+C:\Working\MSIoCExtension\GCMIoCExtension\obj\Debug\netstandard2.0\GCMIoCExtension.csprojAssemblyReference.cache
+C:\Working\MSIoCExtension\GCMIoCExtension\obj\Debug\netstandard2.0\GCMIoCExtension.AssemblyInfoInputs.cache
+C:\Working\MSIoCExtension\GCMIoCExtension\obj\Debug\netstandard2.0\GCMIoCExtension.AssemblyInfo.cs
+C:\Working\MSIoCExtension\GCMIoCExtension\obj\Debug\netstandard2.0\GCMIoCExtension.dll
+C:\Working\MSIoCExtension\GCMIoCExtension\obj\Debug\netstandard2.0\GCMIoCExtension.pdb
