@@ -2,6 +2,7 @@
 
 namespace GCMIoCExtension
 {
+    [AttributeUsage(AttributeTargets.Interface, AllowMultiple = false, Inherited = false)]
     public class AutoRegister : Attribute, IAutoRegister
     {
         public IoCScope Scope { get; }
