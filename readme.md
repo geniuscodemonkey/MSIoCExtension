@@ -29,6 +29,9 @@ You should only use this on the _Top Most_ interface within your inheirtance str
 
 If the _AutoRegister_ attribute is used within the inheirtance tree of the interfaces (i.e. a is assignable to b); then an _ArgumentException_ is thrown with the full name of both types so you can track down and fix the issue.
 
+**N.B.**
+The interface that uses _AutoRegister_ should be visible to the IoC assembly; BUT the class that implements the interface doesn't need to be. So the class can stay **internal** to the project whilst the interface in **public**.
+
 ## License
 
 (c) GenisCodeMonkey 2020
